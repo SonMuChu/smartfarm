@@ -1,4 +1,4 @@
-<!doctype html>
+
 <html lang="ko">
 
 <!-----HEAD----->
@@ -7,7 +7,7 @@
 <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" type="text/css" href="https://github.com/SonMuChu/smartfarm/blob/32a23365782953a3491c4a4ad54fe58b14158dfd/css/style.css">
+<link rel="stylesheet" type="text/css" href="./css/style.css">
     <script defer src="/__/firebase/10.11.1/firebase-app-compat.js"></script>
     <!-- include only the Firebase features as you need -->
     <script defer src="/__/firebase/10.11.1/firebase-auth-compat.js"></script>
@@ -39,8 +39,8 @@
 <body>
 <script src="https://kit.fontawesome.com/92f405adec.js"></script>
 <script src="http://code.jquery.com/jquery-latest.min.js"></script>
-<script src="https://github.com/SonMuChu/smartfarm/blob/32a23365782953a3491c4a4ad54fe58b14158dfd/js/weather.js"></script>
-<script src="https://github.com/SonMuChu/smartfarm/blob/32a23365782953a3491c4a4ad54fe58b14158dfd/js/checkbox.js"></script>
+<script src="./js/weather.js"></script>
+<script src="./js/checkbox.js"></script>
 
 <section id="body">
 <div class="fix-layout">
@@ -111,7 +111,7 @@
 </div>
 
 
-<script src="https://github.com/SonMuChu/smartfarm/blob/32a23365782953a3491c4a4ad54fe58b14158dfd/js/clock.js"></script>
+<script src="./js/clock.js"></script>
 
 
 </div>
@@ -148,10 +148,7 @@
             'performance',
           ].filter(feature => typeof app[feature] === 'function');
           loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
-        } catch (e) {
-          console.error(e);
-          loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
-        }
+        } 
       });
     </script>
 		
